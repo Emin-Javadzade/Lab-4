@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Bir Rəqəm daxil edin: </td>
+            <td> <input type="text" id="sayiInput" /> </td>
+            <td> <input type="button" value="Hesabla" onclick="Hesapla()" /> </td>
+        </tr>
+    </table>
+    
+
+    <script>
+        function Hesapla() {
+            var sayi;
+            var netice=1;
+            sayi=document.getElementById("sayiInput").value;
+                for (let index = 1; index <=sayi; index++) {
+                    netice=netice*index;   
+                }
+                alert("Nəticə: " + netice);
+            }
+        
+    </script>
+</body>
+</html>
